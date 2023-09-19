@@ -45,7 +45,7 @@ jobs:
         id: build-and-push
         with:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
-          push: true
+          push: false
           tags: ${{ steps.docker_meta.outputs.tags }}
 
       # https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-an-intermediate-environment-variable
