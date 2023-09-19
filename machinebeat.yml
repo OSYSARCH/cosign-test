@@ -1,0 +1,20 @@
+machinebeat.config.modules:
+  # Glob pattern for configuration loading
+  path: ${path.config}/modules.d/*.yml
+
+  # Set to true to enable config reloading
+  reload.enabled: false
+
+  # Period on which files under path should be checked for changes
+  #reload.period: 10s
+
+#-------------------------- Elasticsearch output ------------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["intel1:9200", "intel2:9200", "intel3:9200"]
+
+  # Optional protocol and basic auth credentials.
+  #protocol: "https"
+
+  username: "elastic"
+  password: "changeme"

@@ -1,0 +1,17 @@
+# Module: mqtt
+
+- module: mqtt
+  metricsets: ["topic"]
+  enabled: true
+  period: 1s
+  host: "192.168.1.1:1883"
+  topics: ["tele/#", "state/#", "powerbox1/#", "greenhouse/#", "sofar/#", "umg96s-solaredge/#", "umg96s-grid/#", "umg103/#"]
+  decode_payload: true
+  #qos
+  #user: ""
+  #password: ""
+  #ssl: true
+  #CA: ""
+  #clientCert: ""
+  #clientKey: ""
+
